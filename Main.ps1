@@ -2,7 +2,7 @@ Import-Module UniversalDashboard.Community
 
 
 
- $PSScriptroo =  Split-Path -Path $psISE.CurrentFile.FullPath           
+ $PSScriptroo =  $PSScriptroot          
  
 $endpoint = New-UDEndpointInitialization -Variable PSScriptroo
 
