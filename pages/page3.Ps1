@@ -18,7 +18,7 @@ New-UDPage -Name "Results"  -Icon bell  -Content {
             New-UDGrid -Title "Server Details" -Headers @("Name","IP","Domain","STATUS") -Properties @("Name" ,"IP","DM","ST") -Endpoint {
             
                 
-                        $Data1 = Import-Csv "C:\Users\Administrator\Desktop\POSHUD\ISLAB_TEST_PING - Copy.csv"
+                        $Data1 = Import-Csv "$PSScriptroo\files\TEST - Copy.csv"
                         
                         $dataobj = @()
                         

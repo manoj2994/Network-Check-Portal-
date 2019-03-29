@@ -64,7 +64,7 @@
                  
                     
                         New-UDTable -Headers @("Total No of Servers","Total No of offline Servers","Total No of online Servers","Others","Last Checked Time") -FontColor 'black' -Endpoint {
-                            $Data1 = Import-Csv "C:\Users\Administrator\Desktop\POSHUD\TEST - Copy.csv"
+                            $Data1 = Import-Csv "$PSScriptroo\files\TEST - Copy.csv"
                             
                             [pscustomobject]@{
                             
@@ -95,7 +95,7 @@
                 New-UDColumn -Size 9 {
 
                     New-UDChart -Type Bar -Title "Network Status Dashboard" -Endpoint {
-                $Data1 = Import-Csv "C:\Users\Administrator\Desktop\POSHUD\TEST - Copy.csv"
+                $Data1 = Import-Csv "$PSScriptroo\files\TEST - Copy.csv"
                 
                 -5..-1|ForEach-Object  {
                 

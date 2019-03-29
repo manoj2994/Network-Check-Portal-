@@ -18,7 +18,7 @@ begin{
 
 process{
 
-$ip = Import-Csv -Path "C:\Users\Administrator\Desktop\POSHUD\TEST - Copy.csv"
+$ip = Import-Csv -Path "$PSScriptroot\files\TEST - Copy.csv"
 
 foreach ($i in $ip){
 
@@ -91,7 +91,7 @@ catch{
 
 }
 
-$result | Export-Csv -NoTypeInformation "C:\Users\Administrator\Desktop\POSHUD\ISLAB_TEST_PING - Copy.csv"
+$result | Export-Csv -NoTypeInformation "$PSScriptroot\files\TEST - Copy.csv"
 
 Clear-Variable -Name result,ip
 

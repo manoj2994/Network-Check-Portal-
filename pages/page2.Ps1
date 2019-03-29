@@ -25,9 +25,9 @@ New-UDPage  -Name "Run Now" -Icon bicycle -Content {
                         New-UDColumn -Size 12 {
                
                                 
-                         $(Unblock-File "C:\Users\Administrator\Desktop\POSHUD\Test-Ping.psm1")
+                         $(Unblock-File "$PSScriptroo\Test-Ping.psm1")
 
-                         $(Import-Module  "C:\Users\Administrator\Desktop\POSHUD\Test-Ping.psm1")
+                         $(Import-Module  "$PSScriptroo\Test-Ping.psm1")
 
                          $(Test-Ping)
 

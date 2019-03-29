@@ -4,7 +4,7 @@ New-UDPage -Name "History" -Icon history  -Content {
 
  New-UDCard -Title "History" -Endpoint {
  
-    $data = Import-Csv 'C:\Users\Administrator\Desktop\POSHUD\ISLAB_TEST_PING - Copy.csv'
+    $data = Import-Csv "$PSScriptroo\files\TEST - Copy.csv"
     $data1 = ($data | gm -MemberType NoteProperty).Name
     $tl = $data1.Length
     $values = $data1[-1..-($tl-4)]
